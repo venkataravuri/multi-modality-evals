@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi_modality_evals"
+description = "An evaluation and benchmarking framework for multi-modality LLMs!"
+version = "2024.0.0"
+requires-python = ">= 3.8"
+dependencies = [
+  "accelerate",
+  "transformers",
+  "tqdm",
+]
+authors = [
+  {name = "Venkata Ravuri", email = "venkata.ravuri@gmail.com"},
+]
+maintainers = [
+  {name = "Venkata Ravuri", email = "venkata.ravuri@gmail.com"}
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["llm", "eval", "benchmark"]
+
+[project.scripts]
+multi-modality-evals = "multi_modality_evals.__main__:main"
